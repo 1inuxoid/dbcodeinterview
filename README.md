@@ -1,4 +1,4 @@
-* Given the interface:
+* Given the interface [See src/main/java/model/Database.java](src/main/java/model/Database.java):
 
 ```java
 public interface Database {
@@ -17,7 +17,10 @@ public interface Database {
 ```
 
 Provide an implementation which will allow multiple users to insert / read/ modify the data from the database.
+
 The data can be stored in a file per table in an appropriate format (format is not of material importance, text based formats like  CSV are acceptable).
-The server can be, for example, implemented using Spring Boot
+
+The server can be, for example, implemented using Spring Boot: 
 https://spring.io/guides/gs/spring-boot/
+
 The system shall expose the corresponding operations via a standard REST/Http based interface: to insert, select and modify the data.
