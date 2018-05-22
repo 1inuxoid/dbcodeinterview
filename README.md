@@ -16,9 +16,9 @@ public interface Database {
 }
 ```
 
-Provide an implementation which will allow multiple users to insert / read/ modify the data from the database.
+Provide an implementation which will allow multiple users to insert / read/ modify the data to/from the database.
 
-The data should be stored in a file per table in an appropriate format (format is not of material importance, text based formats like  CSV are acceptable).
+The data should be stored in a file per table in an appropriate format (format is not of material importance, text based formats like CSV are acceptable).
 
 The server can be, for example, implemented using Spring Boot: 
 https://spring.io/guides/gs/spring-boot/
