@@ -5,11 +5,11 @@ import java.util.List;
 /*
  * Given the interface:
  *
- * Provide an implementation which will allow multiple users to insert / read/ modify the data from the database.
- * The data should be stored in a file per table in an appropriate format (format is not of material importance, text based formats like  CSV are acceptable).
- *
- * The server can be, for example, implemented using Spring Boot
- * https://spring.io/guides/gs/spring-boot/
+ * Provide an implementation which will allow multiple users to insert / read/ modify the data to/from the database.
+ * 
+ * The data should be stored in a file per table in an appropriate format (format is not of material importance, text based formats like CSV are acceptable).
+ * 
+ * The server can be, for example, implemented using Spring Boot: https://spring.io/guides/gs/spring-boot/
  *
  * The system shall expose the corresponding operations via a standard REST/Http based interface: to insert, select and modify the data.
  */
