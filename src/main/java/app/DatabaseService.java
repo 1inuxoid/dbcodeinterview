@@ -18,8 +18,12 @@ public class DatabaseService implements Database {
     private static final String FILE_EXTENSION = ".csv";
     private static final String SEPARATOR = ";";
 
-    private Map<String, AtomicInteger> tableSeqMap = new HashMap<>();
-    private Path dbFolder;
+    // the map where we store a sequence for id field, which is also used as monitor lock for file operations
+    private final Map<String, AtomicInteger> tableSeqMap = new HashMap<>();
+
+    private final Path dbFolder;
+    // flag to control lazy initialization of the service
+    // I postpone the initialization mostly to allow cleaning up DB folder before first write operations
     private boolean initialized = false;
 
     public DatabaseService() {
